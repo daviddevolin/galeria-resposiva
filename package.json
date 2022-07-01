@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/daviddevolin/galeria-resposiva/issues"
   },
-  "homepage": "https://github.com/daviddevolin/galeria-resposiva#readme"
+  "homepage": "https://github.com/daviddevolin/galeria-resposiva#readme",
+  "dependencies": {
+    "@material-ui/icons": "^4.11.3"
+  }
 }
