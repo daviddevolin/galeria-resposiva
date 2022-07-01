@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/daviddevolin/galeria-resposiva#readme",
   "dependencies": {
-    "@material-ui/icons": "^4.11.3"
+    "@material-ui/icons": "^4.11.3",
+    "react-icons": "^4.4.0"
   }
 }
