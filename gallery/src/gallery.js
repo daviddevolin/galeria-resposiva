@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './gallery.css';
 
 import Img1 from './img/img1.jpg'
@@ -61,13 +61,23 @@ const Gallery = () =>{
         },
     ]
 
+    const [model, setModel] = useState(false)
+    const [tempImgSrc, setTempImgSrc] = useState('')
+    const getImg = (imgSrc) => {
+        setTempImgSrc(imgSrc);
+        setModel(true);
+    }
 
     return (
+        <>
+        <div className={model? "model open":"model"}>
+            <img src={tempImgSrc} />
+        </div>
         <div className='gallery'>
             {
                 data.map((item, index)=>{
                     return(
-                        <div className='photos' key={index}>
+                        <div className='photos' key={index} onClick ={() => getImg(item.imgSrc)} >
                             <img src={item.imgSrc} style={{width:'100%'}}/>
 
                         </div>
@@ -75,6 +85,7 @@ const Gallery = () =>{
                 })
             }
         </div>
+        </>
         
     )
 }
