@@ -1,15 +1,17 @@
-import React from "react";
-import Img1 from "./img/img1.jpg"
-import Img2 from "./img/img2.jpg"
-import Img3 from "./img/img3.jpg"
-import Img4 from "./img/img4.jpg"
-import Img5 from "./img/img5.jpg"
-import Img6 from "./img/img6.jpg"
-import Img7 from "./img/img7.jpg"
-import Img8 from "./img/img8.jpg"
-import Img9 from "./img/img9.jpg"
-import Img10 from "./img/img10.jpg"
-import Img11 from "./img/img11.jpg"
+import React from 'react';
+import './gallery.css';
+
+import Img1 from './img/img1.jpg'
+import Img2 from './img/img2.jpg'
+import Img3 from './img/img3.jpg'
+import Img4 from './img/img4.jpg'
+import Img5 from './img/img5.jpg'
+import Img6 from './img/img6.jpg'
+import Img7 from './img/img7.jpg'
+import Img8 from './img/img8.jpg'
+import Img9 from './img/img9.jpg'
+import Img10 from './img/img10.jpg'
+import Img11 from './img/img11.jpg'
 const Gallery = () =>{
 
     let data = [
@@ -61,11 +63,11 @@ const Gallery = () =>{
 
 
     return (
-        <div className="Gallery">
+        <div className='gallery'>
             {
                 data.map((item, index)=>{
                     return(
-                        <div className="photos" key={index}>
+                        <div className='photos' key={index}>
                             <img src={item.imgSrc} style={{width:'100%'}}/>
 
                         </div>
